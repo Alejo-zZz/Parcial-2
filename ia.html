@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>IA en el SDLC — IA ➜ Dev</title>
+  <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="sub-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="IMG/logo.png" alt="" width="32" height="32"/><span>IA ➜ Dev</span></a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="ia.html" aria-current="page">IA en el SDLC</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a class="btn btn-primary" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="container prose">
+    <h1>Etapas del ciclo de vida con IA</h1>
+    <details open>
+      <summary><strong>1. Requisitos</strong> — Minería de feedback y priorización</summary>
+      <ul>
+        <li>Clasificación de issues, detección de duplicados y agrupación por tema.</li>
+        <li>Resumen de entrevistas y extracción de criterios de aceptación.</li>
+        <li><em>Shneiderman:</em> soporte para atajos (plantillas de historia).</li>
+      </ul>
+    </details>
+    <details>
+      <summary><strong>2. Diseño</strong> — Arquitectura y UX asistidas</summary>
+      <ul>
+        <li>Generación de bocetos, flujos y ADRs con revisión humana.</li>
+        <li>Heurísticos de <em>Nielsen</em>: consistencia y estándares, correspondencia con el mundo real.</li>
+      </ul>
+    </details>
+    <details>
+      <summary><strong>3. Implementación</strong> — Pair-programming</summary>
+      <ul>
+        <li>Sugerencias de refactor, detección de olores, convenciones.</li>
+        <li>Prevención de errores (Shneiderman) con checks pre-commit.</li>
+      </ul>
+    </details>
+    <details>
+      <summary><strong>4. Pruebas</strong> — Cobertura guiada por riesgo</summary>
+      <ul>
+        <li>Generación de pruebas unitarias y de contrato.</li>
+        <li>Explicaciones claras de fallos (Nielsen: ayuda y documentación).</li>
+      </ul>
+    </details>
+    <details>
+      <summary><strong>5. Entrega & Operación</strong> — Observabilidad</summary>
+      <ul>
+        <li>Resúmenes de cambios, detección de regresiones, RCA asistido.</li>
+        <li>Ética: privacidad de datos, trazabilidad y ML Monitoring.</li>
+      </ul>
+    </details>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>© 2025 — Parcial#2 IA aplicada al Desarrollo de Software.</p>
+      <nav aria-label="Secundaria">
+        <ul class="footer-links">
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="sobre.html">Autor</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

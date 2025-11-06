@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contacto — IA ➜ Dev</title>
+  <link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="sub-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="IMG/logo.png" alt="" width="32" height="32"/><span>IA ➜ Dev</span></a>
+      <nav aria-label="Principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="ia.html">IA en el SDLC</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a class="btn btn-primary" href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="container">
+    <h1>Contacto</h1>
+    <form class="form" action="#" method="post" aria-describedby="ayuda">
+      <p id="ayuda">Responde en menos de 48 h. Campos marcados con * son obligatorios.</p>
+
+      <label for="nombre">Nombre *</label>
+      <input id="nombre" name="nombre" required autocomplete="name"/>
+
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" required autocomplete="email"/>
+
+      <label for="tema">Tema</label>
+      <select id="tema" name="tema">
+        <option value="asesoria">Asesoría IA</option>
+        <option value="ux">UX y accesibilidad</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="mensaje">Mensaje *</label>
+      <textarea id="mensaje" name="mensaje" required rows="6"></textarea>
+
+      <fieldset>
+        <legend>Preferencias</legend>
+        <label class="check"><input type="checkbox" name="boletin"/> Quiero recibir novedades</label>
+      </fieldset>
+
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <small>© 2025 — Parcial#2 IA aplicada al Desarrollo de Software.</small>
+    </div>
+  </footer>
+</body>
+</html>

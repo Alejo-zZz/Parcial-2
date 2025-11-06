@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>IA aplicada al Desarrollo de Software</title>
+  <meta name="description" content="Sitio educativo sobre IA aplicada al ciclo de vida del software: requisitos, diseño, pruebas, MLOps y ética."/>
+  <link rel="stylesheet" href="css/estilos.css"/>
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml"/>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-grid">
+      <a class="brand" href="index.html" aria-label="Ir al inicio">
+        <img src="IMG/logo.png" alt="Logo IA Dev" width="40" height="40"/>
+        <span>IA ➜ Dev</span>
+      </a>
+
+      <nav class="navbar" role="navigation" aria-label="Principal">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+        <ul id="menu" class="menu">
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="ia.html">IA en el SDLC</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="sobre.html">Sobre el creador</a></li>
+          <li><a class="btn btn-primary" href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="container hero-content">
+        <h1>IA aplicada al Desarrollo de Software</h1>
+        <p>Del análisis de requisitos a producción: patrones, herramientas y criterios de calidad asistidos por IA, con foco en usabilidad y valor real para el usuario.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="ia.html">Ver mapa del SDLC + IA</a>
+          <a class="btn btn-outline" href="recursos.html">Guías y plantillas</a>
+        </div>
+      </div>
+      <figure class="hero-media" aria-hidden="true">
+        <img src="img/hero.jpg" alt="" />
+      </figure>
+    </section>
+  </header>
+
+  <main id="contenido" class="container">
+    <section class="grid-3 feature-cards" aria-labelledby="seccion-por-que">
+      <h2 id="seccion-por-que">¿Por qué IA en el desarrollo?</h2>
+      <article class="card">
+        <h3>Calidad y velocidad</h3>
+        <p>Soporte a revisiones de código, detección de olores, generación de pruebas y análisis estático asistido.</p>
+      </article>
+      <article class="card">
+        <h3>Mejor UX</h3>
+        <p>Segmentación de tareas, microcopys generados con contexto y test A/B guiado por datos.</p>
+      </article>
+      <article class="card">
+        <h3>Riesgo y ética</h3>
+        <p>Controles de sesgo, privacidad, explicabilidad y trazabilidad de decisiones en pipelines ML.</p>
+      </article>
+    </section>
+
+    <section class="split">
+      <div>
+        <h2>Mapa rápido del SDLC con IA</h2>
+        <ul class="checklist">
+          <li>Requisitos: clasificación de feedback y detección de duplicados.</li>
+          <li>Diseño: bocetos, arquitectura y ADRs asistidos.</li>
+          <li>Código: pair-programming, refactors y estándares.</li>
+          <li>Pruebas: generación y cobertura guiada por riesgo.</li>
+          <li>Entrega: análisis de cambios y notas automáticas.</li>
+          <li>Operación: observabilidad y RCA asistidos.</li>
+        </ul>
+        <a class="btn btn-primary" href="ia.html">Explorar etapas</a>
+      </div>
+      <aside class="panel">
+        <h3>Principios de UX usados</h3>
+        <ul>
+          <li><strong>Shneiderman:</strong> consistencia, atajos, feedback inmediato, prevención de errores.</li>
+          <li><strong>Nielsen:</strong> visibilidad del estado, control del usuario, reconocimiento mejor que recuerdo.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <h4>IA ➜ Dev</h4>
+        <p>Guías prácticas y éticas para aplicar IA en proyectos reales de software.</p>
+      </div>
+      <nav aria-label="Secundaria">
+        <ul class="footer-links">
+          <li><a href="sobre.html">Autor</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      <small>© 2025 — Parcial#2 IA aplicada al Desarrollo de Software.</small>
+    </div>
+  </footer>
+
+  <script>
+    // Accesibilidad: botón menú con ARIA (Nielsen: visibilidad del estado, control del usuario)
+    const toggle = document.querySelector('.nav-toggle');
+    const menu = document.getElementById('menu');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('is-open');
+      });
+    }
+  </script>
+</body>
+</html>
